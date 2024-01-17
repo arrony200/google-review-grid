@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Place Demo</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+    <script src="../google-places.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCt7HHQuWNitjpYEAWngZ0MzOhkHV35A8A&libraries=places"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/google-places-data@0.1.1/google-places.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCt7HHQuWNitjpYEAWngZ0MzOhkHV35A8A"></script> -->
+
+    
+    <link rel="stylesheet" href="../google-places.css">
+  </head>
+  <body>
+    <div id="google-reviews"></div>
+  </body>
+
+  <script>
+    $(document).ready(function() {
+      $("#google-reviews").googlePlaces({
+          placeId: 'ChIJ0wRVVyGxXEYRsq6c2s6Jwe0'
+        , render: ['reviews']
+        , shorten_names: false
+      });
+    });
+  </script>
+
+
+</html>

@@ -1,0 +1,93 @@
+.review-stars ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.review-stars ul li {
+  float: left;
+  margin-right: 5px;
+}
+
+.review-stars ul li i {
+  color: #E4B248;
+  font-size: 17px;
+  font-style: normal;
+}
+/*color: #E4B248;*/
+.review-stars ul li i.inactive {
+  color: #c6c6c6;
+}
+.star:after {
+  content: "\2605";
+}
+p.review-text {
+  color: rgb(17, 17, 17);
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+  font-family: Open Sans, sans-serif;
+}
+div#google-reviews {
+  display: flex;
+  gap: 20px;
+}
+.review-item {
+  width: 18%;
+}
+.review-content-top {
+  background-color: rgba(17, 17, 17, 0.05);
+  padding: 24px;
+  border-radius: 34px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.google-logo svg {
+  width: 75px;
+  margin-top: 10px;
+}
+
+.review-content-bottom {
+  display: flex;
+  align-items: center;
+}
+.auth-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.auth-img img {
+  max-width: 100%;
+}
+span.review-sep svg {
+  width: 14px;
+  height: 14px;
+  margin-left: 4px;
+}
+span.review-date {
+  display: block;
+  color: rgba(17, 17, 17, 0.5);
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 5px;
+  font-family: Open Sans, sans-serif;
+}
+span.review-author {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: rgb(17, 17, 17);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Open Sans, sans-serif;
+}
+span.review-arrow {
+  position: absolute;
+  top: 100%;
+}
+.review-arrow svg {
+  width: 22px;
+  fill: rgba(17, 17, 17, 0.05);
+  height: 14px;
+}
